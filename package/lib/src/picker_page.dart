@@ -174,7 +174,7 @@ class _FilesystemPickerState extends State<FilesystemPicker> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title ?? directoryName),
+        title: Text(widget.title ?? directoryName,style: TextStyle(color: Colors.white)),
         leading: IconButton(
           icon: Icon(Icons.close),
           onPressed: () => Navigator.of(context).pop(),
@@ -241,7 +241,7 @@ class _FilesystemPickerState extends State<FilesystemPicker> {
                                 ?.color ??
                             Theme.of(context).primaryTextTheme?.title?.color)
                         .withOpacity(0.5),
-                    icon: Icon(Icons.check_circle),
+                    icon: Icon(Icons.check_circle,color: Colors.white),
                     label: (widget.pickText != null)
                         ? Text(widget.pickText,style: TextStyle(color: Colors.white))
                         : const SizedBox(),

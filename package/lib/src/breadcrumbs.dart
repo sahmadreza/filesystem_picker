@@ -66,7 +66,7 @@ class Breadcrumbs<T> extends StatelessWidget {
                 textColor: (index == (items.length - 1))
                     ? (textColor ?? defaultTextColor)
                     : (textColor ?? defaultTextColor).withOpacity(0.75),
-                child: Text(items[index].text),
+                child: Text(items[index].text,style: TextStyle(color: Colors.white)),
                 onPressed: () {
                   if (items[index].onSelect != null) {
                     items[index].onSelect(items[index].data);
