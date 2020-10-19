@@ -243,7 +243,7 @@ class _FilesystemPickerState extends State<FilesystemPicker> {
                         .withOpacity(0.5),
                     icon: Icon(Icons.check_circle),
                     label: (widget.pickText != null)
-                        ? Text(widget.pickText,style: TextStyle(Colors.white))
+                        ? Text(widget.pickText,style: TextStyle(color: Colors.white))
                         : const SizedBox(),
                     onPressed: (!permissionRequesting && permissionAllowed)
                         ? () => widget.onSelect(directory.absolute.path)
